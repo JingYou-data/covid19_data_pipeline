@@ -1,0 +1,13 @@
+covid_pipeline:
+  outputs:
+    dev:
+      type: snowflake
+      account: YAYYQVP-WJ71623
+      user: ASHELY21
+      password: 1127@MadisonMillDr
+      role: SYSADMIN
+      warehouse: COMPUTE_WH
+      database: COVID_PIPELINE_DB
+      schema: BRONZE
+      threads: 4
+  target: dev

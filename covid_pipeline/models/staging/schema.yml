@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: stg_county_covid
+    columns:
+      - name: county_fips
+        tests:
+          - not_null
+          
+      - name: state
+        tests:
+          - not_null
+      - name: covid_cases_per_100k
+        tests:
+          - not_null
+
+  - name: stg_covid_deaths
+    columns:
+      - name: state
+        tests:
+          - not_null
+      - name: week_ending_date
+        tests:
+          - not_null
+      - name: covid_19_deaths
+        tests:
+          - not_null:
+              config:
+                severity: warn
+
+  - name: stg_census
+    columns:
+      - name: state_fips
+        tests:
+          - not_null
+      - name: county
+        tests:
+          - not_null
+      - name: total_population
+        tests:
+          - not_null

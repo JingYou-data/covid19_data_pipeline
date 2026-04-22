@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: COVID_PIPELINE_DB
+    schema: BRONZE
+    tables:
+      - name: COUNTY_COVID_DATA
+        description: "County level COVID-19 cases data from CDC"
+
+      - name: COVID_DEATHS_DATA
+        description: "Provisional COVID-19 death counts by week and state from NCHS"
+
+      - name: CENSUS_DATA
+        description: "US Census demographic data by county"

@@ -1,0 +1,28 @@
+# Ingestion
+requests>=2.31.0
+httpx>=0.26.0
+pandas>=2.1.0
+census>=0.8.19
+
+# Snowflake
+snowflake-connector-python>=3.6.0
+snowflake-sqlalchemy>=1.5.0
+
+# dbt
+dbt-snowflake>=1.7.0
+
+# Dashboard
+streamlit>=1.30.0
+plotly>=5.18.0
+folium>=0.15.0
+streamlit-folium>=0.18.0
+
+# API (stretch goal)
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# Dev tools
+python-dotenv>=1.0.0
+pytest>=7.4.0
+black>=24.0.0
+ruff>=0.2.0
